@@ -12,8 +12,8 @@ const options = {
         },
         servers: [
             {
-                url: "http://localhost:5001/api/v1",
-                description: "Local server",
+                url: process.env.API_BASE_URL ? `${process.env.API_BASE_URL}/api/v1` : "http://localhost:5001/api/v1",
+                description: "api server",
             },
         ],
         components: {
@@ -42,7 +42,8 @@ const swaggerSpec = swaggerJsdoc(options);
 
 function swaggerDocs(app) {
     app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-    console.log("Swagger Docs available at http://localhost:5001/api-docs");
+    console.log(`Swagger Docs available at ${process.env.API_BASE_URL ? `${process.env.API_BASE_URL}/api-docs` : "http://localhost:5001/api-docs"}`);
+
 }
 
 //Export as a function
