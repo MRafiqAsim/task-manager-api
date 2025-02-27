@@ -29,6 +29,7 @@ const MESSAGES = {
         TASK_CACHE_MISS: (id) => `Cache miss. Task fetched from DB: ${id}`,
         TASK_UPDATED: (id) => `Task updated: ${id}`,
         TASK_DELETED: (id) => `Task deleted: ${id}`,
+        TASK_NOT_FOUND: (id) => `Task not found: ${id}`,
         ERROR_OCCURRED: (method, error) => `Error in ${method}: ${error.message}`,
     }
 };
