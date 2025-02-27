@@ -5,4 +5,5 @@ module.exports = {
     MONGO_URI: process.env.MONGO_URI,
     REDIS_HOST: process.env.REDIS_HOST || "127.0.0.1",
     REDIS_PORT: process.env.REDIS_PORT || 6380,
+    REDIS_URL: process.env.REDIS_URL || null,
 };
