@@ -9,10 +9,10 @@ const swaggerDocs = require("./config/swagger");
 
 
 // Load environment variables
-//dotenv.config();
-dotenv.config({
+dotenv.config();
+/* dotenv.config({
     path: process.env.NODE_ENV === "test" ? ".env.test" : ".env"
-  });
+  }); */
   
 console.log("Loaded environment variables for", process.env.NODE_ENV);
 console.log("Mongo URI:", process.env.MONGO_URI);
