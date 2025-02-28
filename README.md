@@ -5,12 +5,12 @@ This is a Task Management API built using Node.js, MongoDB, and Redis.
 
 ## Table of Contents
 1. [Installation](#installation)
-2. [Running Locally](#running-locally)
-3. [Running with Docker](#running-with-docker)
+2. [How to run the app locally](#running-locally)
+3. [How to run the app locally with Docker](#running-with-docker)
 4. [Environment Variables](#environment-variables)
 5. [API Endpoints](#api-endpoints)
 6. [Deployment](#deployment)
-7. [License](#license)
+7. [Bonus Points](#bonus-points)
 
 ---
 
@@ -163,3 +163,12 @@ The API is deployed to Microsoft Azure and is accessible at the following URL:
 [https://taskmanagerapir-aqdpezfffpeug9em.canadacentral-01.azurewebsites.net/api-docs](https://taskmanagerapir-aqdpezfffpeug9em.canadacentral-01.azurewebsites.net/api-docs)
 
 ---
+
+## Bonus Points
+All the bonus points are covered , please see details below:
+
+### 1. **Caching with Redis**
+- Cache the task data when it's fetched. [Done]
+- Invalidate the cache whenever a task is edited or deleted. [Done]
+### 2. **Containerize application**
+ - Containerize the application using Docker and provide instructions to run it locally using Docker Compose. [Done]
